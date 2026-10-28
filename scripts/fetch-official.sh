@@ -27,7 +27,7 @@ docs/interface/overview.md	/zh/interface/overview.md
 docs/interface/maskeditor.md	/zh/interface/maskeditor.md
 docs/interface/template.md	/zh/interface/features/template.md
 docs/interface/shortcuts.md	/zh/interface/shortcuts.md
-docs/tutorials/basic/text-to-image.md	/zh/tutorials/basic/text-to-image.md
+# docs/tutorials/basic/text-to-image.md 已改写成本站原创深度教程，不再从官方拉取，避免覆盖。
 docs/tutorials/basic/image-to-image.md	/zh/tutorials/basic/image-to-image.md
 docs/tutorials/basic/inpaint.md	/zh/tutorials/basic/inpaint.md
 docs/tutorials/basic/outpaint.md	/zh/tutorials/basic/outpaint.md
