@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # ComfyUI-Manager 安装
 

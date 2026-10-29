@@ -20,7 +20,7 @@ sidebar_position: 1
 
 ## 课前准备
 
-- 已经安装好 ComfyUI，能打开界面。还没安装的话，先看[首次生成图像](/docs/get-started/first-generation)。
+- 已经安装好 ComfyUI，能打开界面。
 - 已下载一个 SD1.5 模型文件（本课使用 [v1-5-pruned-emaonly-fp16.safetensors](https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive/blob/main/v1-5-pruned-emaonly-fp16.safetensors)，约 2.1 GB）。
 - 首次运行需要把模型从磁盘加载进显存，请预留几分钟时间。
 
@@ -323,7 +323,7 @@ KSampler 是整条流水线里真正执行去噪的节点，也是参数最多�
 
 输出一份 LATENT，交给 VAE Decode。
 
-它的七个参数——seed、steps、cfg、sampler_name、scheduler、denoise、latent_image——将在第三课逐个讲透。
+它的六个参数——seed、steps、cfg、sampler_name、scheduler、denoise——将在第三节逐个讲透。
 
 ### 2.7 E. VAE Decode（VAE 解码）
 
@@ -582,7 +582,7 @@ SD1.5 的正确姿势是「小图生成、二次放大」：
 2. 用放大模型或潜空间放大做 2 倍。
 3. 需要更多细节时，再用图生图做低 denoise 的精修。
 
-直接生成 1024×1024 的问题不是显存，而是**构图崩坏**：出现两个头、肢体重复、远景混乱。这不是调参能解决的，因为已经超出了模型的训练分辨率。具体放大流程见本站《[图像放大](/docs/tutorials/basic/upscale)》。
+直接生成 1024×1024 的问题不是显存，而是**构图崩坏**：出现两个头、肢体重复、远景混乱。这不是调参能解决的，因为已经超出了模型的训练分辨率。正确做法是先用模型擅长的分辨率生成，再走二次放大流程。
 
 ### 4.6 显存、速度与批量
 
@@ -762,10 +762,12 @@ batch 是在同一次采样里并行生成多张，共享条件与参数；队�
 
 ### 6.4 下一步
 
-- **图生图**：理解 denoise 的保留与重绘语义（[图生图](/docs/tutorials/basic/image-to-image)）。
-- **图像放大**：把 512 的底图做成高清成品（[图像放大](/docs/tutorials/basic/upscale)）。
-- **LoRA**：用低秩补丁给模型加风格（[LoRA](/docs/tutorials/basic/lora)）。
-- **ControlNet**：用结构条件控制构图（[ControlNet 概览](/docs/tutorials/controlnet/overview)）。
+顺着这条线往下，还有几个方向值得继续：
+
+- **图生图**：理解 denoise 的保留与重绘语义，让模型改写一张已有图像而不是凭空生成。
+- **图像放大**：把 512 的底图做成高清成品，解决 4.5 里提到的分辨率天花板。
+- **LoRA**：用低秩补丁给模型加风格或角色，不必换底模。
+- **ControlNet**：用结构条件控制构图，让提示词「指哪画哪」。
 
 ## 参考资料
 

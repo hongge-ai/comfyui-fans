@@ -1,4 +1,5 @@
 ---
+unlisted: true
 title: 如何在 ComfyUI 中安装自定义节点
 description: 使用 ComfyUI Manager、git clone 或 ZIP 下载在 ComfyUI 中安装自定义节点，并安全安装其 Python 依赖
 ---

@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # 遮罩编辑器 - 在 ComfyUI 中创建和编辑遮罩
 

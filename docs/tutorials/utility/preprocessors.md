@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # ComfyUI 预处理器工作流
 

@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # 开始 ComfyUI 的 AI 绘图之旅
 

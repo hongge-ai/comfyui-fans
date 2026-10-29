@@ -1,4 +1,5 @@
 ---
+unlisted: true
 title: 手动安装 ComfyUI（Windows、macOS、Linux）
 description: 在 Windows、macOS 或 Linux 上手动安装 ComfyUI：创建虚拟环境、克隆仓库、安装 GPU 依赖并启动应用
 ---

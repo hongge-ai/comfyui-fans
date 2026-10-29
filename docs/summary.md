@@ -1,4 +1,5 @@
 ---
+unlisted: true
 sidebar_position: 16
 title: 总结：学习路线与进阶
 description: 全站知识总复盘——学习地图、参数速查表、故障排查树与进阶方向

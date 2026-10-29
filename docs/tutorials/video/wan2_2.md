@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # Wan2.2 视频生成ComfyUI 官方原生工作流示例
 
