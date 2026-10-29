@@ -53,7 +53,7 @@ const config = {
         },
         items: [
           {
-            to: '/docs/get-started/intro',
+            to: '/docs/tutorials/basic/text-to-image',
             label: '开始学习',
             position: 'right',
             className: 'navbar-cta',
@@ -76,19 +76,24 @@ const config = {
           {
             title: '文档',
             items: [
-              { label: '介绍', to: '/docs/get-started/intro' },
-              { label: '安装 ComfyUI', to: '/docs/get-started/install/overview' },
-              { label: '首次生成图像', to: '/docs/get-started/first-generation' },
-              { label: '学习总结', to: '/docs/summary' },
+              { label: '文生图：从第一张图到每个参数', to: '/docs/tutorials/basic/text-to-image' },
             ],
           },
           {
             title: '官方教程',
             items: [
-              { label: '文生图（必读）', to: '/docs/tutorials/basic/text-to-image' },
-              { label: '图生图', to: '/docs/tutorials/basic/image-to-image' },
-              { label: '局部重绘', to: '/docs/tutorials/basic/inpaint' },
-              { label: 'ControlNet', to: '/docs/tutorials/controlnet/overview' },
+              {
+                label: '文生图（官方版）',
+                href: 'https://docs.comfy.org/zh/tutorials/basic/text-to-image',
+              },
+              {
+                label: '图生图（官方版）',
+                href: 'https://docs.comfy.org/zh/tutorials/basic/image-to-image',
+              },
+              {
+                label: '官方教程目录',
+                href: 'https://docs.comfy.org/zh/tutorials/overview',
+              },
             ],
           },
           {

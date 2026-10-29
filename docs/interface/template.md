@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # 工作流模板 - ComfyUI 内置工作流模板
 

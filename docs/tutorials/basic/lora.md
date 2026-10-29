@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # ComfyUI LoRA 使用示例
 

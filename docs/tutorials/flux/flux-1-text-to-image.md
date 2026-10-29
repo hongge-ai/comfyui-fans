@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # ComfyUI Flux 文生图工作示例
 

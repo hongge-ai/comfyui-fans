@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # 深度 ControlNet 工作流示例
 

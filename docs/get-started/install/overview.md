@@ -1,4 +1,5 @@
 ---
+unlisted: true
 title: 安装方式怎么选
 description: Comfy Desktop、Windows 便携版、手动安装三种方式的区别与选择建议
 ---

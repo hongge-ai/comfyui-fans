@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # 如何更新 ComfyUI
 

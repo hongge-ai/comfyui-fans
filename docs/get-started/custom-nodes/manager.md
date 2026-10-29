@@ -1,4 +1,5 @@
 ---
+unlisted: true
 title: ComfyUI Manager 简介
 description: 用于管理 ComfyUI 中自定义节点、模型等的扩展
 ---

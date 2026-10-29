@@ -1,4 +1,5 @@
 ---
+unlisted: true
 title: 适用于 Windows / macOS 的 Comfy Desktop
 description: 在 Windows 或 macOS 上安装 Comfy Desktop：系统要求、安装步骤、更新与彻底卸载
 ---

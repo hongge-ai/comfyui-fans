@@ -1,3 +1,6 @@
+---
+unlisted: true
+---
 
 # Qwen-Image ComfyUI原生工作流示例
 

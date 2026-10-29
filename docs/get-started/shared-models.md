@@ -1,4 +1,5 @@
 ---
+unlisted: true
 title: 共享模型路径（extra_model_paths.yaml）
 description: 通过 extra_model_paths.yaml 为 ComfyUI 添加额外的模型与自定义节点搜索路径，实现多实例或多程序共享模型
 ---

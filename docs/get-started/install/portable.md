@@ -1,4 +1,5 @@
 ---
+unlisted: true
 title: 适用于 Windows 的 ComfyUI 便携版
 description: 下载并运行 ComfyUI Portable（便携版）：内嵌 Python 与 CUDA 构建的独立套件，解压即可启动
 ---
