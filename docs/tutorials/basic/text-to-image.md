@@ -4,6 +4,8 @@ description: 从零跑通 ComfyUI 文生图，读懂六个节点与 KSampler 的
 sidebar_position: 1
 ---
 
+import InteractiveWorkflow from '@site/src/components/InteractiveWorkflow';
+
 # ComfyUI 文生图：从第一张图到每个参数
 
 > 本课以 SD1.5 示例工作流为样板，带你完整走一遍文生图：先照着做出一张图，再弄清六个节点各做什么、KSampler 的每个参数怎么调，最后学会复现与排错。所有步骤都可以直接照做。
@@ -65,9 +67,16 @@ sidebar_position: 1
 2. **菜单打开**：菜单 **工作流（Workflows）→ 打开（Open）**，选择 `.png` 或 `.json` 文件，快捷键 `Ctrl/Cmd + O`。
 3. **示例浏览器**：菜单 **工作流 → 浏览示例工作流（Browse example workflows）**，选择 **Text to Image**。
 
-加载成功后，画布上会出现六个节点，位置和连线如下：
+加载成功后，画布上会出现六个节点。先在下面的交互实验室里熟悉它：拖动节点和画布、点击端口与连线、修改任意参数，下方讲解会同步更新。点击「模拟运行」还可以观察执行顺序。
+
+<InteractiveWorkflow />
+
+<details>
+<summary>查看原始工作流截图</summary>
 
 ![示例工作流：A 到 F 共六个节点](/img/tutorial/basic/text-image-workflow.jpg)
+
+</details>
 
 > **为什么一张图片能变成工作流？**
 > 示例图本身是一张生成好的 512×512 成品图，PNG 文件里额外保存了两段数据：一段是界面用的工作流结构，一段是执行用的节点参数。ComfyUI 读取这两段数据，就能把节点、连线和参数原样还原。
