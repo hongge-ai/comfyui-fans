@@ -103,6 +103,13 @@ h1 {
   --ifm-table-background: #161615;
 }
 
+@media (max-width: 996px) {
+  .markdown table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
 /* ============ 顶部导航栏 ============ */
 /*
  * 毛玻璃效果必须放在伪元素上，不能直接写在 .navbar 上。
