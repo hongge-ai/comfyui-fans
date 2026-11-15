@@ -22,6 +22,14 @@ const config = {
   markdown: {
     mermaid: true,
   },
+  // Umami 自托管统计（无 cookie）
+  scripts: [
+    {
+      src: 'https://umami.comfyui.fans/script.js',
+      'data-website-id': 'f52f0ae1-6ecd-4a42-bb70-028b3652dd77',
+      async: true,
+    },
+  ],
   themes: ['@docusaurus/theme-mermaid'],
   presets: [
     [
