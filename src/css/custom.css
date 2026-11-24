@@ -110,6 +110,125 @@ h1 {
   }
 }
 
+/* ============ 文生图教程：阅读路径与表格 ============ */
+.tutorial-path {
+  background: color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-background-color));
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 18%, var(--site-border));
+  border-radius: 16px;
+  margin: 1.5rem 0;
+  padding: 1.2rem;
+}
+
+.tutorial-path__intro {
+  align-items: baseline;
+  color: var(--ifm-color-emphasis-700);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  gap: 0.35rem 0.8rem;
+  margin-bottom: 0.9rem;
+}
+
+.tutorial-path__eyebrow {
+  color: var(--ifm-color-primary);
+  font-size: 0.8rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+}
+
+.markdown .tutorial-path__list {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.markdown .tutorial-path__list li {
+  margin: 0;
+  min-width: 0;
+}
+
+.markdown .tutorial-path__list a {
+  align-items: flex-start;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--site-border);
+  border-radius: 10px;
+  color: var(--ifm-font-color-base);
+  display: flex;
+  gap: 0.7rem;
+  height: 100%;
+  min-height: 4.7rem;
+  padding: 0.8rem;
+  text-decoration: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.markdown .tutorial-path__list a:hover {
+  background: var(--site-surface-hover);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-font-color-base);
+}
+
+.tutorial-path__number {
+  color: var(--ifm-color-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.tutorial-path__list strong,
+.tutorial-path__list small {
+  display: block;
+}
+
+.tutorial-path__list strong {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tutorial-path__list small {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin-top: 0.2rem;
+}
+
+.tutorial-path__list a:focus-visible,
+.tutorial-table-scroll:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+}
+
+.tutorial-table-scroll {
+  border-radius: 10px;
+  margin-bottom: var(--ifm-leading);
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+
+.markdown .tutorial-table-scroll table {
+  margin-bottom: 0;
+  min-width: 32rem;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .tutorial-path {
+    padding: 1rem;
+  }
+
+  .markdown .tutorial-path__list {
+    grid-template-columns: 1fr;
+  }
+
+  .markdown .tutorial-path__list a {
+    min-height: 0;
+  }
+}
+
 /* ============ 顶部导航栏 ============ */
 /*
  * 毛玻璃效果必须放在伪元素上，不能直接写在 .navbar 上。
@@ -186,16 +305,6 @@ h1 {
 /* ============ 左侧边栏 ============ */
 .theme-doc-sidebar-container {
   border-right: 1px solid var(--site-border) !important;
-}
-
-/*
- * 隐藏窄屏侧边栏里的「← 回到主菜单」按钮。
- * 该按钮由 Docusaurus 的 MobileSidebar/SecondaryMenu 渲染，仅在存在二级菜单时出现；
- * 本站只有文档页会注册二级菜单（blog 已关闭），因此这条规则实际只作用于 /docs 下。
- * 代价：窄屏文档页不再有入口回到主菜单（开始学习 / 官方文档 / GitHub）。
- */
-.navbar-sidebar__back {
-  display: none;
 }
 
 .theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link,

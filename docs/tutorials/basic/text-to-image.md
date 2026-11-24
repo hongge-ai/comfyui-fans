@@ -26,7 +26,7 @@ import InteractiveWorkflow from '@site/src/components/InteractiveWorkflow';
 
 ## 课前准备
 
-- ComfyUI 已安装，能打开界面。
+- ComfyUI 已安装，能打开界面。尚未安装？请参考官方安装指引：[Windows 桌面版](https://docs.comfy.org/zh/installation/desktop/windows)、[macOS 桌面版](https://docs.comfy.org/zh/installation/desktop/macos)、[Windows 便携版](https://docs.comfy.org/zh/installation/comfyui_portable_windows)或 [Windows / macOS / Linux 手动安装](https://docs.comfy.org/zh/installation/manual_install)。
 - 已下载 [v1-5-pruned-emaonly-fp16.safetensors](https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive/blob/main/v1-5-pruned-emaonly-fp16.safetensors)（约 2.1 GB）。
 - 已下载本课的 [工作流 JSON](/workflows/text-to-image-sd15.json)，稍后直接拖进画布。
 - 首次运行要把模型从磁盘读入显存，会慢几十秒，属于正常现象。

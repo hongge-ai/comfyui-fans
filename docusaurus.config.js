@@ -10,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ComfyUI Fans',
-  tagline: '对齐官方文档的 ComfyUI 中文教程站，让每位爱好者都能学会 ComfyUI',
+  tagline: '从第一张图开始，学会用 ComfyUI 创作',
   favicon: 'img/favicon.svg',
   url: 'https://comfyui.fans',
   baseUrl: '/',
@@ -71,11 +71,6 @@ const config = {
             label: '官方文档 ↗',
             position: 'right',
           },
-          {
-            href: 'https://github.com/comfyanonymous/ComfyUI',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -88,24 +83,7 @@ const config = {
             ],
           },
           {
-            title: '官方教程',
-            items: [
-              {
-                label: '文生图（官方版）',
-                href: 'https://docs.comfy.org/zh/tutorials/basic/text-to-image',
-              },
-              {
-                label: '图生图（官方版）',
-                href: 'https://docs.comfy.org/zh/tutorials/basic/image-to-image',
-              },
-              {
-                label: '官方教程目录',
-                href: 'https://docs.comfy.org/zh/tutorials/overview',
-              },
-            ],
-          },
-          {
-            title: '官方资源',
+            title: '官方资源（站外）',
             items: [
               {
                 label: 'ComfyUI 官方文档',
@@ -114,14 +92,6 @@ const config = {
               {
                 label: 'ComfyUI GitHub 仓库',
                 href: 'https://github.com/comfyanonymous/ComfyUI',
-              },
-              {
-                label: 'Comfy 官网',
-                href: 'https://www.comfy.org/',
-              },
-              {
-                label: 'Comfy Examples 工作流模板',
-                href: 'https://comfyanonymous.github.io/ComfyUI_examples/',
               },
             ],
           },
