@@ -10,7 +10,7 @@ unlisted: true
 
 无论是哪个版本的 ComfyUI，都是运行在一个独立的 Python 环境中。
 
-### 支持的操作系统
+## 支持的操作系统
 
 目前我们支持以下操作系统：
 
@@ -20,17 +20,17 @@ unlisted: true
 
 确认系统满足要求后，请前往[安装方式怎么选](/docs/get-started/install/overview)，选择适合你系统和硬件的安装方式。
 
-### Python 版本
+## Python 版本
 
 * **Python 3.13** 支持良好，推荐使用
 * Python 3.14 可用，但部分自定义节点可能存在问题。自由线程版本可以运行，但某些依赖会启用 GIL，因此尚未完全支持
 * 如果某些自定义节点在 3.13 上有依赖问题，Python 3.12 是一个不错的备选
 
-### 浏览器要求
+## 浏览器要求
 
 为获得最佳体验，请使用 **Google Chrome 143 或更高版本**。Chrome 142 及更早版本存在已知问题，可能导致 ComfyUI 出现视觉故障和性能问题。
 
-### 支持的硬件
+## 支持的硬件
 
 * **NVIDIA 显卡** - 安装稳定版 PyTorch（CUDA 13.0）：`pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu130`
 * **AMD 显卡（Linux）** - ROCm 7.2 稳定版或 nightly 版
@@ -50,7 +50,7 @@ unlisted: true
   Windows 便携版目前附带 Python 3.13 和 PyTorch CUDA 13.0。如果无法启动，请更新您的 NVIDIA 驱动程序。
 </Note>
 
-### 依赖
+## 依赖
 
 * 安装 PyTorch（根据您的硬件选择对应版本）
 * 安装 ComfyUI 的 requirements.txt 中所有依赖：`pip install -r requirements.txt`
@@ -68,7 +68,7 @@ unlisted: true
 
   要验证 MPS 是否在你的 Mac 上正常工作：
 
-  ```bash theme={null}
+  ```bash
   python -c "import torch; print(torch.backends.mps.is_available())"
   ```
 </Accordion>
